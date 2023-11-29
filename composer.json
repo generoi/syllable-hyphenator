@@ -1,5 +1,6 @@
 {
     "name": "joppuyo/syllable-hyphenator",
+    "type": "wordpress-plugin",
     "description": "Server-side hyphenation for WordPress with Syllable library",
     "require": {
         "vanderlee/syllable": "dev-master",
