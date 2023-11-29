@@ -11,7 +11,9 @@
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
 
-require __DIR__ . '/vendor/autoload.php';
+if (file_exists($composer = __DIR__ . '/vendor/autoload.php')) {
+    require_once $composer;
+}
 
 use Vanderlee\Syllable\Syllable;
 
