@@ -70,6 +70,7 @@ class SyllableHyphenator
         }
 
         $this->syllable = new Syllable($locale);
+        $this->syllable->setLibxmlOptions(LIBXML_NOWARNING | LIBXML_NOERROR);
 
         $min_word_length = apply_filters(
             'syllable_hyphenator_min_word_length',
